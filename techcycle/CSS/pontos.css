@@ -1,0 +1,91 @@
+
+  /* Seção principal*/
+  .collection-point {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Estilo do título */
+  h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px; 
+  }
+  
+  /* Grid */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 20px; 
+    width: 100%;
+    max-width: 1000px; 
+    margin-bottom: 20px; 
+  }
+  
+  /* Itens do grid */
+  .grid-item {
+    background-color: white;
+    border: 1px solid #ccc; 
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .grid-item h3 {
+    font-size: 1.5em; /* Tamanho do título de cada grid */
+    margin-bottom: 10px;
+  }
+  
+  .grid-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .grid-item li {
+    margin-bottom: 5px;
+    font-size: 1.1em;
+  }
+  
+  /* Estilo do mapa */
+  .map-container {
+    text-align: center;
+    width: 100%;
+    max-width: 1000px; /* Determina a largura do mapa */
+  }
+  
+  .map-container h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  
+  /* Google Maps iframe styling */
+  .map-container iframe {
+    width: 100%;
+    height: 450px; /* Fixed height for the map */
+    border: 0;
+    max-width: 100%; /* Make the map responsive */
+  }
+  
+  /* Ajustes responsivos de acordo com o tamanho da tela */
+  @media (max-width: 768px) {
+    /* Por exemplo: para telas pequenas, apenas uma coluna será exibida*/
+    .grid-container {
+      grid-template-columns: 1fr; 
+    }
+  
+    .map-container iframe {
+      height: 300px; /* Reduz o tamanho do mapa */
+    }
+  
+    h1 {
+      font-size: 2em; /* Ajusta o tamanho do título */
+    }
+  
+    .grid-item h3 {
+      font-size: 1.3em; /* Diminui o tamanho da fonte */
+    }
+  }

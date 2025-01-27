@@ -1,0 +1,55 @@
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  background-color: #4CAF50;
+  color: white;
+  margin: 0;
+}
+
+/* Container for the grid */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Grid layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Styling for each grid item */
+.grid-item {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item h3 {
+  margin-top: 0;
+  color: #4CAF50;
+  font-size: 1.2em;
+}
+
+.grid-item ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.grid-item li {
+  margin: 5px 0;
+}
+
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+
